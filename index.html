@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Bootstrap Icon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        img {
+            border-radius: 50%;
+            animation: img 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes img {
+            0% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        img:hover {
+            animation-play-state: paused;
+        }
+
+        #contact .card {
+            border-radius: 15px;
+            background: #ffffff;
+        }
+
+        #contact button {
+            border-radius: 30px;
+        }
+
+        #footer a:hover {
+            color: #ffc107;
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+
+
+        .des {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            color: cyan;
+        }
+
+        .foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <h1>Bidyananda</h1>
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <!-- Nav Links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Footer</a></li>
+                </ul>
+
+                <!-- Search -->
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                </form>
+
+                <!-- Buttons -->
+                <div>
+                    <button class="btn btn-outline-light me-2">Login</button>
+                    <button class="btn btn-warning">Sign-up</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container py-5" id="home">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+
+            <!-- Text -->
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold mb-3">
+                    Mayengbam Bidyananda Singh
+                </h1>
+                <p class="lead">
+                    Quickly design and customize responsive mobile-first sites with Bootstrap.
+                </p>
+
+                <div class="d-grid gap-2 d-md-flex">
+                    <button class="btn btn-primary btn-lg">Hire Me</button>
+                    <button class="btn btn-outline-secondary btn-lg">Download Resume</button>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-12 col-lg-5 text-center">
+                <img src="BM.jpeg" class="img-fluid image" width="400" height="400" alt="Profile">
+            </div>
+
+        </div>
+    </div>
+    <!--About Me-->
+
+    <section id="about" class="container py-5">
+
+        <h1 class="text-center fw-bold mb-3">About Me</h1>
+        <p class="text-center text-muted mb-5">
+            Crafting ideas into reality through code, creativity, and a bit of chaos </p>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Skills -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3"> Clothing Store</h4>
+                        <p class="text-muted small">
+                            The tools I use to build, break, and rebuild better.
+                        </p>
+                        <ul class="list-unstyled mt-3">
+                            <li> Web Development</li>
+                            <li>Natural Language Processing</li>
+                            <li> Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3"> Experience</h4>
+                        <p class="text-muted small">
+                            Learning by building real things, not just watching tutorials.
+                        </p>
+                        <ul class="list-unstyled mt-3">
+                            <li> Personal Projects</li>
+                            <li> Web Applications</li>
+                            <li> Continuous Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Passion -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3"> Passion</h4>
+                        <p class="text-muted small">
+                            What keeps me coding even when things break at 2 AM.
+                        </p>
+                        <ul class="list-unstyled mt-3">
+                            <li>Building Cool Stuff</li>
+                            <li> Tech & Gaming</li>
+                            <li> Self Growth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <!--Project Section-->
+        <h1 class="text-center fw-bold m-5" id="project">My Project</h1>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Clothing Store -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3"> Clothing Store</h4>
+                        <p class="text-muted small p-5">
+                            A modern Clothing Store website designed to deliver a smooth and stylish shopping
+                            experience. It showcases a curated collection of trendy apparel with easy navigation,
+                            responsive design, and user-friendly features like product browsing, detailed views, and
+                            seamless interaction—making online fashion shopping simple, fast, and engaging.
+                        </p>
+                        <a class="btn btn-primary" href="https://bidyanandam.github.io/Clothing-Store/"
+                            target="_blank">Visit Website</a>
+                        <a class="btn btn-dark" href="https://github.com/BidyanandaM/Clothing-Store"
+                            target="_blank">Github Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form card -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3"> Form</h4>
+                        <p class="text-muted small p-5">
+                            A clean and responsive form webpage designed for efficient data collection and user
+                            interaction. It features a well-structured layout with intuitive input fields, ensuring a
+                            smooth and hassle-free experience. Built with simplicity and usability in mind, the form
+                            allows users to quickly enter and submit information with clarity and ease.
+                        </p>
+                        <a class="btn btn-primary" href="https://bidyanandam.github.io/Form/" target="_blank">Visit
+                            Website</a>
+                        <a class="btn btn-dark" href="https://github.com/BidyanandaM/Form" target="_blank">Github
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Portfolio Card-->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 text-center p-3">
+                    <div class="card-body">
+                        <h4 class="fw-bold mb-3">Portfolio</h4>
+                        <p class="text-muted small p-5">
+                            A sleek and professional portfolio website crafted to showcase skills, projects, and
+                            personal achievements. It features a clean layout, engaging visuals, and smooth navigation,
+                            allowing visitors to explore work effortlessly. Designed to leave a strong impression, the
+                            site highlights creativity, technical ability, and a modern digital presence.
+                        </p>
+                        <a class="btn btn-primary" href="https://bidyanandam.github.io/MyPortfolio/"
+                            target="_blank">Visit Website</a>
+                        <a class="btn btn-dark" href="https://github.com/BidyanandaM/MyPortfolio" target="_blank">Github
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Contact Section-->
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h1 class="text-center fw-bold mb-3">Contact Me</h1>
+        <p class="text-center text-muted mb-5">
+            Got an idea, project, or just want to say hi? Drop a message.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <div class="card shadow-lg border-0 p-4">
+                    <form>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-dark text-light py-4">
+        <div class="container text-center">
+
+            <!-- Name -->
+            <h5 class="fw-bold mb-3">Bidyananda</h5>
+
+            <!-- Social Icons -->
+            <div class="mb-3">
+
+                <a href="https://www.facebook.com/bidyanand.a.898714" target="_blank" class="text-light me-3 fs-4">
+                    <i class="bi bi-facebook"></i></a>
+
+                <a href="https://wa.me/+917005986569" target="_blank" class="text-light me-3 fs-4">
+                    <i class="bi bi-whatsapp"></i></a>
+
+                <a href="https://www.instagram.com/b_dya.may._" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div>
+                <p class="small mb-0">
+                    © 2026 All rights reserved | Built with Bootstrap
+                </p>
+                <p class="small mb-0 des">
+                    Designed and developed by Bidyananda
+                </p>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
